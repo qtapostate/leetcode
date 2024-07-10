@@ -5,8 +5,10 @@ impl Solution {
 
         let mut i = 0;
 
+        let mut window = (None, None, None);
+
         loop {
-            let window = (flowerbed.get(i-1), flowerbed.get(i), flowerbed.get(i+1));
+            window = (flowerbed.get(i-1), flowerbed.get(i), flowerbed.get(i+1));
 
             plantable = match window {
                 (Some(prev), Some(curr), Some(next)) => *prev == 0 && *curr == 0 && *next == 0,
