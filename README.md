@@ -17,3 +17,4 @@ description and a file called `solution.rs` containing the Rust code I wrote for
 |1768  |[Merge Strings Alternately](./1768)                           |LeetCode 75        |
 |2405  |[Optimal Partition of String](./2405)                         |Amazon Spring '23  |
 |283   |[Move Zeroes](./283)                                          |LeetCode 75        |
+|392   |[Is Subsequence](./392)                                       |LeetCode 75        |
