@@ -18,6 +18,7 @@ description and a file called `solution.rs` containing the Rust code I wrote for
 | 1071 | [Greatest Common Divisor of Strings](./1071)       | LeetCode 75       |
 | 1471 | [Kids With the Greatest Number of Candies](./1471) | LeetCode 75       |
 | 1492 | [The kth Factor of n](./1492)                      | Amazon Spring '23 |
+| 1679 | [Max Number of K-Sum Pairs](./1679)                | LeetCode 75       |
 | 1768 | [Merge Strings Alternately](./1768)                | LeetCode 75       |
 | 2405 | [Optimal Partition of String](./2405)              | Amazon Spring '23 |
 | 2534 | [Time Taken to Cross the Door](./2534)             | Uncategorized     |
