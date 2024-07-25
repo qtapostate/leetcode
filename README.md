@@ -14,6 +14,7 @@ description and a file called `solution.rs` containing the Rust code I wrote for
 | 392  | [Is Subsequence](./392)                            | LeetCode 75       |
 | 443  | [String Compression](./443)                        | LeetCode 75       |
 | 605  | [Can Place Flowers](./605)                         | LeetCode 75       |
+| 643  | [Maximum Average Subarray I](./643)                | LeetCode 75       |
 | 994  | [Rotting Oranges](./994)                           | LeetCode 75       |
 | 1071 | [Greatest Common Divisor of Strings](./1071)       | LeetCode 75       |
 | 1471 | [Kids With the Greatest Number of Candies](./1471) | LeetCode 75       |
