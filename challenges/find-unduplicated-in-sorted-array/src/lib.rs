@@ -44,14 +44,20 @@ mod tests {
     use super::*;
 
     #[test]
-    fn test_find_unique_1() {
+    fn test_find_unique_value_in_middle() {
         let input = [-1, -1, 3, 3, 4, 5, 5, 9, 9];
         assert_eq!(find_unique_value(&input), 4);
     }
 
     #[test]
-    fn test_find_unique_2() {
+    fn test_find_unique_value_on_left() {
         let input = [-6, -5, -5, -2, -2, 14, 14, 20, 20, 21, 21, 82, 82, 1000, 1000, 1450, 1450];
         assert_eq!(find_unique_value(&input), -6);
+    }
+
+    #[test]
+    fn test_find_unique_value_on_right() {
+        let input = [-1028, -1028, -114, -114, 0, 0, 6, 6, 19, 19, 27, 27, 82, 91, 91];
+        assert_eq!(find_unique_value(&input), 82);
     }
 }
