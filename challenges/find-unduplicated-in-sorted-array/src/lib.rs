@@ -20,23 +20,12 @@ pub fn find_unique_value(input: &[i64]) -> i64 {
         // choose which direction to continue with
         // under ordinary conditions, we will use the direction with an odd number of elements for our next recursive iteration
 
-        let mut recurse_on = match (left_len % 2 != 0, right_len % 2 != 0) {
-            (true, false) => 0,
-            (false, true) => 1,
+        break match (left_len % 2 != 0, right_len % 2 != 0) {
+            (true, false) => find_unique_value(bisected[0]),
+            (false, true) => find_unique_value(bisected[1]),
             _ => 0,
         };
-
-        // recurse
-        break find_unique_value(bisected[recurse_on]);
     };
-}
-
-fn concat_slices(base: &[i64], add: i64) -> Vec<i64> {
-    let mut base_vec = base.to_vec();
-
-    base_vec.append(&mut vec![add]);
-
-    return base_vec;
 }
 
 fn split(input: &[i64]) -> [&[i64]; 2] {
