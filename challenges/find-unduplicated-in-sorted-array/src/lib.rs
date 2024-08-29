@@ -1,30 +1,28 @@
 pub fn find_unique_value(input: &[i64]) -> i64 {
-    return loop {
-        let bisected = split(input);
+    let bisected = split(input);
 
-        println!("{:?}", bisected);
+    println!("{:?}", bisected);
 
-        let left_len = bisected[0].len();
-        let right_len = bisected[1].len();
+    let left_len = bisected[0].len();
+    let right_len = bisected[1].len();
 
-        // check the base cases
+    // check the base cases
 
-        if left_len == 1 { // base case: return element on left
-            break bisected[0][0];
-        }
+    if left_len == 1 { // base case: return element on left
+        return bisected[0][0];
+    }
 
-        if right_len == 1 { // base case: return element on right
-            break bisected[1][0];
-        }
+    if right_len == 1 { // base case: return element on right
+        return bisected[1][0];
+    }
 
-        // choose which direction to continue with
-        // under ordinary conditions, we will use the direction with an odd number of elements for our next recursive iteration
+    // choose which direction to continue with
+    // under ordinary conditions, we will use the direction with an odd number of elements for our next recursive iteration
 
-        break match (left_len % 2 != 0, right_len % 2 != 0) {
-            (true, false) => find_unique_value(bisected[0]),
-            (false, true) => find_unique_value(bisected[1]),
-            _ => 0,
-        };
+    return match (left_len % 2 != 0, right_len % 2 != 0) {
+        (true, false) => find_unique_value(bisected[0]),
+        (false, true) => find_unique_value(bisected[1]),
+        _ => 0,
     };
 }
 
